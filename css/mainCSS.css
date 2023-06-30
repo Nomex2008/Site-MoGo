@@ -243,9 +243,7 @@ h1,h2,h3,h4,h5,h6 {
 .about {
     display: flex;
     justify-content: space-between;
-}
-.about__margin{
-    padding: 0 3% 0 10px;
+    margin: 80px 0 20px 0 ;
 }
 .about__item {
     position: relative;
@@ -290,4 +288,34 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
+}
+/*statistics*/
+.statistics{
+    background-color: #95e1d3;
+}
+.stat {
+    display: flex;
+}
+.stat__item {
+    flex: 1 1 0;
+
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.2;
+
+    padding: 70px 25px;
+
+    border-left: 1px solid #b5eae0;
+}
+.stat__item:last-child{
+    border-right: 1px solid #b5eae0;
+}
+.stat__count {
+    font-size: 72px;
+    font-weight: 700;
+}
+.stat__text {
+    font-size: 14px;
+    font-weight: 400;
 }
