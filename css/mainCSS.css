@@ -210,9 +210,9 @@ hr {
 .section {
     padding: 80px 0 80px 0;
 }
-/*.section--gray{
+.section--gray{
     background-color: #f8f8f8;
-}*/
+}
 .section__header {
     margin: 0 auto 50px ;
     width: 100%;
@@ -395,8 +395,6 @@ hr {
 .wedo__item{
     width: 50%;
 }
-.accordion {
-}
 .accordion__item {
     border: 1px solid #e5e5e5;
     margin-bottom: 10px;
@@ -446,9 +444,6 @@ hr {
 
     z-index: 1;
 }
-.accordion__title {
-
-}
 .accordion__content {
     display: none;
 
@@ -460,4 +455,76 @@ hr {
     font-weight: 300;
     font-style: italic;
     color: #999999;
+}
+/*revies*/
+.revies {
+    padding: 0 110px;
+
+    position: relative;
+}
+.revies__item {
+    padding-left: 205px;
+    position: relative;
+}
+.revies__photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border: 3px solid #95e1d3
+}
+.revies__text {
+    font-family: Roboto;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
+}
+.revies__author {
+    font-family: 'Kaushan Script';
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #333333;
+}
+.revies__author::before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin-right: 10px;
+}
+.revies__btn{
+    font-size: 0;
+    color: transparent;
+
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+.revies__btn::after{
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid #cccccc;
+    border-right: 2px solid #cccccc;
+
+    position: absolute;
+    z-index: 1;
+
+    transform:translateY(-50%)
+     rotate(45deg);
+}
+.revies__btn--prev{
+    transform:translateY(-50%)
+     rotate(-180deg);
+     left: 0;
+}
+.revies__btn--next{
+    right: 0px;
 }
