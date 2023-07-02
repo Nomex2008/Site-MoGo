@@ -252,36 +252,38 @@ hr {
     font-weight: 400;
     color: #999999;
 }
-/*about*/
-.about {
+/*card*/
+.card {
     display: flex;
     justify-content: space-between;
     margin: 60px 0 20px 0 ;
 }
-.about__item {
-    position: relative;
+.card__item {
     width: 380px;
-    background-color: #95e1d3;
 }
-.about__item:hover .about__img img{
+.card__inner{
+    background-color: #95e1d3;
+    position: relative;
+}
+.card__item:hover .card__img img{
     opacity: .1;
 }
-.about__item:hover .about__img{
+.card__item:hover .card__img{
     transform: translate3d(-10px,-10px,0);
 }
-.about__item:hover .about__content{
+.card__item:hover .card__content{
     opacity: 1;
 
 }
-.about__img{
+.card__img{
     transition: transform .3s linear;
     background: linear-gradient(0.0deg, rgba(252,227,138,0.89) 0%, rgba(243,129,129,0.89) 100%);
 }
-.about__img img {
+.card__img img {
     display: block;
     transition: opacity .1s linear;
 }
-.about__content {
+.card__content {
     width: 100%;
 
     text-align: center;
@@ -295,12 +297,32 @@ hr {
     transform: translate3d(0, -50%, 0);
     transition: opacity .3s linear;
 }
-.about__text {
+.card__text {
     font-size: 18px;
     line-height: 1.2;
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
+}
+.card__info {
+    margin-top: 20px;
+
+    text-align: center;
+}
+.card__name {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+}
+.card__prof {
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
 }
 /*statistics*/
 .statistics{
@@ -527,4 +549,33 @@ hr {
 }
 .revies__btn--next{
     right: 0px;
+}
+/*social*/
+.social {
+    display: flex;
+    justify-content: center;
+}
+.social__item {
+    width: 55px;
+    height: 55px;
+
+    padding: 10px;
+
+    background-color: #fce38a;
+    border-right: 1px solid #f38181;
+
+    font-size: 30px;
+    text-decoration: none;
+    color: #f38181;
+    line-height: 1;
+
+    transition: background-color .3s linear;
+    transition: color .3s linear;
+}
+.social__item:last-child{
+    border-right: 0;
+}
+.social__item:hover{
+    color: #ffffff;
+    background-color: #f38181;
 }
