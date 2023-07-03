@@ -829,3 +829,227 @@ hr {
 .map__icon{
     margin: 0 0 10px 0;
 }
+/*footer*/
+.footer{
+    padding-top: 65px;
+
+    background-color: #f8f8f8;
+}
+.footer__inner {
+    padding-bottom: 65px;
+    justify-content: space-between;
+    display: flex;
+}
+.footer__col {
+    padding: 0 0 0 2%;
+}
+.footer__col-first{
+    width: 40%;
+}
+.footer__col-second{
+    width: 29%;
+}
+.footer__col-third{
+    width: 31%;
+}
+
+.footer__logo {
+    margin-bottom: 30px;
+
+    font-size: 46px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #cccccc;
+}
+.footer__text{
+    margin-bottom: 30px;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #999999;
+}
+.footer__social {
+    margin-bottom: 25px;
+}
+.footer__social-hader {
+    padding-bottom: 15px;
+    font-style: 14px;
+    color: #333;
+    font-weight: 400;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+.footer__social-num {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #333333;
+}
+.footer__social-content {
+    padding-top: 15px;
+
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
+}
+
+.footer__social-content a {
+    display: inline-block;
+    vertical-align: middle;
+
+    margin-left: 10px;
+
+    font-size: 18px;
+    color: #95e1d3;
+
+    transition: color .3s linear;
+}
+.footer__social-content a:hover{
+    color:#1c5e52;
+}
+.footer__title{
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+}
+/*subscribe*/
+.subscribe{
+    width: 100%;
+    max-width: 380px;
+
+    display: flex;
+}
+.subscribe__input {
+    width: 60%;
+    padding: 12px;
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #333;
+}
+.subscribe__input::placeholder{
+    color: #cccccc;
+}
+.subscribe__btn {
+    width: 40%;
+    padding: 15px 34px;
+    background-color: #95e1d3;
+
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    height: 100%;
+    border: 2px solid #95e1d3;
+
+    transition: background-color .3s linear;
+    transition: border .3s linear;
+}
+.subscribe__btn:hover{
+    background-color: #2d7a6c;
+    border: 2px solid #2d7a6c;
+}
+/*blogs*/
+.blogs {
+
+}
+.blogs__item {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+.blogs__img {
+    width: 100%;
+    height: auto;
+
+    width: 120px;
+    height: 80px;
+}
+.blogs__content {
+    padding: 0 0 0 20px;
+}
+.blogs__title{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+
+    text-decoration: none;
+    transition: text-decoration .3s inherit;
+}
+.blogs__title:hover{
+    text-decoration: underline;
+}
+.blogs__date{
+    font-family: Roboto;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #999999;
+}
+/*instagram*/
+.instagram {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: calc(88px*3);
+}
+.instagram__item {
+    width: 32.333%;
+    border: 1px solid #fff;
+}
+.instagram__item img{
+    display: block;
+}
+.footer__col-third{
+    position: relative;
+}
+.instagram__viev{
+    font-family: Roboto;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 300;
+    font-style: italic;
+    color: #333333;
+
+    margin: 3% 0 0 0;
+    transition: text-decoration .3s inherit;
+}
+.instagram__viev:hover{
+    text-decoration: underline;
+}
+/*copyright*/
+.copyright{
+    border-top: 1px solid #e5e5e5;
+    padding: 20px 0;
+
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #333333;
+
+    text-align: center;
+
+    background-color: #f8f8f8;
+}
+.copyright span{
+    color: #f38181;
+}
